@@ -6,9 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="../GoodsList.js"></script>
+    <style>
+        *{
+           margin: 0; 
+           padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        html{
+            font-size: 16px;
+        }
+        .AClass{
+                width: 600px;
+                height: 600px;
+                /* background-color: rgb(244, 127, 255); */
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 30% 30% 30%;
+                column-gap: 5%;
+                row-gap: 5%;
+        }
+        .JapanClass{
+            width: 600px;
+            height: 400px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .JapanClass>.CircleClass{
+            width: 150px;
+            height: 150px;
+            background-color: crimson;
+            border-radius: 50%;
+        }
+        .pagination{
+            margin-top: 20px;
+        }
+        .pagination>.item{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        .pagination>.item:hover{
+            background-color: aquamarine;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="id1">22222</div>
-
+    <div class="AClass">
+        <div style="background-color: rgb(232, 255, 127);">1</div>
+        <div></div>
+        <div style="background-color: aquamarine;">2</div>
+        <div></div>
+        <div style="background-color: rgb(140, 127, 255);">3</div>
+        <div></div>
+        <div style="background-color: rgb(127, 255, 170);">4</div>
+        <div></div>
+        <div style="background-color: aquamarine;">5</div>
+    </div>
+    <div class="JapanClass">
+            <div class="CircleClass"></div>
+    </div>
+    <ul class="pagination">
+        <li class="item"><a href="#">1</a></li>
+        <li class="item"><a href="#">2</a></li>
+        <li class="item"><a href="#">3</a></li>
+        <li class="item"><a href="#">4</a></li>
+        <li class="item"><a href="#">5</a></li>
+        <li class="item"><a href="#">6</a></li>
+        <li class="item"><a href="#">7</a></li>
+    </ul>
 </body>
 </html>
