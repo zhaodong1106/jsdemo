@@ -11,6 +11,9 @@ class DateUtil{
     static formatxx(){
         return new Date().toLocaleDateString();
     }
+    static formatyy(){
+        return new Date().toLocaleDateString();
+    }
 }
 
 export default DateUtil
