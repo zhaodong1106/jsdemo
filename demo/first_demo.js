@@ -1,5 +1,6 @@
 import C,{VVV,B,CF} from "./export1.js";
 import DateUtil from "./DateUtil.js";
+import { SicBo } from "./PromiseDemo.js";
 
 class A {
     constructor(x,y){
@@ -27,3 +28,4 @@ console.log(DateUtil.formatTime());
 console.log(DateUtil.formatTime());
 console.log(DateUtil.formatyy());
 console.log('2222');
+SicBo().then(x=>console.log(x));

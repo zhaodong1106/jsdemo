@@ -4,7 +4,7 @@ function SicBo(){
         setTimeout(() => {
             let n=parseInt(Math.random()*6+1,10);
             resolve(n)
-        }, 1000);
+        }, 3000);
     })
 }
 
@@ -18,4 +18,5 @@ function Test(x){
     });
 }
 
-Test(1).then(x=>console.log(x)).catch((error)=>console.log(error));
+
+export {SicBo,Test};
