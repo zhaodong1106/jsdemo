@@ -8,6 +8,9 @@ class DateUtil{
     static formatDate(){
         return new Date().toLocaleDateString();
     }
+    static formatxx(){
+        return new Date().toLocaleDateString();
+    }
 }
 
 export default DateUtil
