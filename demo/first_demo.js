@@ -18,11 +18,12 @@ let b=new B();
 console.log(b.test());
 console.log(VVV);
 
-let c=new C();
-console.log(c.test3())
+let c=new C(22,222);
+console.log(c.x)
 console.log(CF(22))
 
 console.log(DateUtil.formatTime());
 console.log(DateUtil.formatTime());
 console.log(DateUtil.formatTime());
+console.log(DateUtil.formatyy());
 console.log('2222');

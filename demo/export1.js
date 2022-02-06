@@ -1,28 +1,32 @@
 class B {
-    
 
-    test(){
+
+    test() {
         return "dasdsad";
     }
 }
 
-var VVV=222
+var VVV = 222
 
 
 // let a=x=>x+1;
 
 // export default a;
 class C {
-   test3(){
-       return 'ccccccccc';
-   }
+    constructor(x,y) {
+        this.x=x;
+        this.y=y;
+    }
+    test3() {
+        return 'ccccccccc';
+    }
 }
 
-export default  C;
-export {VVV};
-export {B};
+export default C;
+export { VVV };
+export { B };
 
-let CF=x=>{
-    return x+"dasdas"
+let CF = x => {
+    return x + "dasdas"
 }
-export {CF}
+export { CF }
