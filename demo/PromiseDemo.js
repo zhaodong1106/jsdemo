@@ -8,4 +8,14 @@ function SicBo(){
     })
 }
 
-SicBo().then(e=>console.log(e));
+function Test(x){
+    return new Promise((resolve,reject)=>{
+            if(x>1){
+                resolve(x);
+            }else{
+                throw new Error(x);
+            }
+    });
+}
+
+Test(1).then(x=>console.log(x)).catch((error)=>console.log(error));
