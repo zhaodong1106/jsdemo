@@ -25,3 +25,4 @@ console.log(CF(22))
 console.log(DateUtil.formatTime());
 console.log(DateUtil.formatTime());
 console.log(DateUtil.formatTime());
+console.log('2222');
