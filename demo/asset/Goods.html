@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="module" src="../GoodsList.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/good.css" />
     <style>
-        *{
-           margin: 0; 
-           padding: 0;
-        }
-        a{
+        a {
             text-decoration: none;
         }
-        html{
+
+        html {
             font-size: 16px;
         }
-        .AClass{
-                width: 600px;
-                height: 600px;
-                /* background-color: rgb(244, 127, 255); */
-                border: 1px solid black;
-                display: grid;
-                grid-template-columns: 30% 30% 30%;
-                grid-template-rows: 30% 30% 30%;
-                column-gap: 5%;
-                row-gap: 5%;
+
+        .AClass {
+            width: 600px;
+            height: 600px;
+            /* background-color: rgb(244, 127, 255); */
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 30% 30% 30%;
+            column-gap: 5%;
+            row-gap: 5%;
         }
-        .JapanClass{
+
+        .JapanClass {
             width: 600px;
             height: 400px;
             background-color: aliceblue;
@@ -36,21 +37,15 @@
             justify-content: center;
             align-items: center;
         }
-        .JapanClass>.CircleClass{
+
+        .JapanClass>.CircleClass {
             width: 150px;
             height: 150px;
             background-color: crimson;
             border-radius: 50%;
         }
-        .pagination{
-            margin-top: 20px;
-        }
-        .pagination>.item{
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-        .pagination>.item:hover{
+
+        .pagination>.item:hover {
             background-color: aquamarine;
             text-align: center;
             border-radius: 3px;
@@ -58,21 +53,25 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="AClass">
-        <div style="background-color: rgb(232, 255, 127);">1</div>
-        <div></div>
-        <div style="background-color: aquamarine;">2</div>
-        <div></div>
-        <div style="background-color: rgb(140, 127, 255);">3</div>
-        <div></div>
-        <div style="background-color: rgb(127, 255, 170);">4</div>
-        <div></div>
-        <div style="background-color: aquamarine;">5</div>
-    </div>
-    <div class="JapanClass">
+    <div style="display: flex;justify-content: space-between;">
+        <div class="AClass">
+            <div style="background-color: rgb(232, 255, 127);">1</div>
+            <div></div>
+            <div style="background-color: aquamarine;">2</div>
+            <div></div>
+            <div style="background-color: rgb(140, 127, 255);">3</div>
+            <div></div>
+            <div style="background-color: rgb(127, 255, 170);">4</div>
+            <div></div>
+            <div style="background-color: aquamarine;">5</div>
+        </div>
+        <div class="JapanClass">
             <div class="CircleClass"></div>
+        </div>
     </div>
+
     <ul class="pagination">
         <li class="item"><a href="#">1</a></li>
         <li class="item"><a href="#">2</a></li>
@@ -82,5 +81,34 @@
         <li class="item"><a href="#">6</a></li>
         <li class="item"><a href="#">7</a></li>
     </ul>
+    <div style="display: flex;">
+        <div class="wrapper">
+            <div class="center">大苏打撒旦撒</div>
+        </div>
+        <div class="England">
+            <div class="mi-1 mi"></div>
+            <div class="mi-2 mi"><div></div></div>
+            <div class="mi-3 mi"></div>
+            <div class="mi-4 mi"><div></div></div>
+            <div class="mi-5 mi">
+                <div class="item-1"></div>
+                <div class="item-2"></div>
+                <div class="item-3"></div>
+                <div class="item-4"></div>
+                <div class="item-5"></div>
+                <div class="item-6"></div>
+                <div class="item-7"></div>
+                <div class="item-8"></div>
+                <div class="item-9"></div>
+            </div>
+            <div class="mi-6 mi"><div></div></div>
+            <div class="mi-7 mi"></div>
+            <div class="mi-8 mi"><div></div></div>
+            <div class="mi-9 mi"></div>
+        </div>
+        <div class="uk"></div>
+    </div>
+    
 </body>
+
 </html>
